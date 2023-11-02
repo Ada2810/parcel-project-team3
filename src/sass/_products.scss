@@ -1,7 +1,76 @@
 /*Mobile*/
+.products-section {
+  width: 100vw;
+  height: auto;
+}
+
+.products-section h2 {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-family: var(--Titan-font);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.products-section h3 {
+  color: var(--pink-color);
+  font-family: var(--Titan-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.products-container {
+  width: 88vw;
+}
+
+.ice-cream {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #ffb8ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ice-cream h3 {
+  text-transform: uppercase;
+  width: 174px;
+  height: 23px;
+  flex-shrink: 0;
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--Titan-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.ice-cream p {
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--DM-Sans-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 152%; /* 21.28px */
+  letter-spacing: 0.56px;
+}
 
 /*Tablet*/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /*Desktop*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
