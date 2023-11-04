@@ -78,10 +78,6 @@
   width: 90%;
 }
 
-.healthy-ice-cream-made .natural-ice-cream-made {
-  background-image: url('../images/splashed-milk.png');
-}
-
 .how-its-made svg {
   width: 4.43px;
   height: 8px;
@@ -91,6 +87,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border: #fff;
+}
+
+.how-its-made button:hover {
+  background-color: #dedede;
+  font-size: large;
 }
 
 .center:hover {
@@ -99,13 +101,17 @@
 }
 
 .healthy-ice-cream-made:hover {
-  font-size: 20px;
-  transition: 2s;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(0.4);
+  transition-duration: 0.7s;
 }
 
 .natural-ice-cream-made:hover {
-  font-size: 18px;
-  transition: 2s;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(0.4);
+  transition-duration: 0.7s;
 }
 
 /*Tablet*/
@@ -172,14 +178,23 @@
     transition-duration: 4000ms;
   }
 
+  .how-its-made button:hover {
+    background-color: #dedede;
+    font-size: large;
+  }
+
   .healthy-ice-cream-made:hover {
-    font-size: 20px;
-    transition: 2s;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(0.4);
+    transition-duration: 0.7s;
   }
 
   .natural-ice-cream-made:hover {
-    font-size: 18px;
-    transition: 2s;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(0.4);
+    transition-duration: 0.7s;
   }
 }
 
@@ -189,10 +204,6 @@
     width: 100vw;
     min-height: 100vh;
     background-color: #fff5f6;
-  }
-
-  .content-how-its-made {
-    background-image: url('../images/splashed-milk.png');
   }
 
   .how-its-made h2 {
@@ -234,22 +245,48 @@
     margin-left: 99px;
   }
 
-  .how-its-made button {
-    margin-left: 99px;
-  }
-
   .center:hover {
     transform: rotateZ(45deg);
     transition-duration: 4000ms;
   }
 
   .healthy-ice-cream-made:hover {
-    font-size: 20px;
-    transition: 2s;
-  }
+  transform: scale(1.3);
+ -webkit-transform: scale(1.3);
+ -ms-transform: scale(0.4);
+ transition-duration: 0.7s;
+}
 
-  .natural-ice-cream-made:hover {
-    font-size: 18px;
-    transition: 2s;
-  }
+.natural-ice-cream-made:hover {
+ transform: scale(1.3);
+ -webkit-transform: scale(1.3);
+ -ms-transform: scale(0.4);
+ transition-duration: 0.7s;
+}
+
+
+.how-its-made button:hover {
+background-color: #dedede;
+font-size: large;
+}
+
+@keyframes animate {
+    from{
+        letter-spacing: 1em;
+    }
+
+    to{
+        letter-spacing: 0em;
+    }
+    }
+}
+
+.values-how-its-made:hover {
+    animation: animate 3s ease-in-out;
+}
+
+
+.how-its-made h2:hover{
+    animation: animate 3s ease-in-out;
+}
 }
